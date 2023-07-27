@@ -259,7 +259,7 @@ svg {
 
 .foot__slogan {
     color: #FFF;
-font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-style: italic;
     font-weight: 100;
@@ -330,5 +330,10 @@ font-family: 'Roboto', sans-serif;
 
     .third__content {
         gap: 64px;
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, 320px);
+        padding: 48px 40px;
     }
 }
