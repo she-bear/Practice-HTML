@@ -295,4 +295,23 @@ font-family: 'Roboto', sans-serif;
         /* для общего центрирования */
         margin: auto;
     }
+
+    .grid__block {
+        grid-template-columns: repeat(1, 362px);
+        gap: 32px;
+        padding-top: 264px;
+        justify-items: center;
+    }
+
+    /* в данном случае нельзя фиксировать высоту .item, т.к. может не поместиться длинный текст у .item__big */
+    
+    .item__big {
+        grid-column: span 1;
+        grid-row: span 1;
+        gap: 30px;
+    }
+
+    .item__big img {
+        width: 98px;
+    }
 }
