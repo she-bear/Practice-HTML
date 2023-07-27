@@ -173,7 +173,9 @@ body {
 
 .second__content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 68px;
 }
@@ -185,6 +187,10 @@ body {
     font-weight: 700;
     line-height: 130%; /* 52px */
     margin-bottom: 30px;
+}
+
+.second__info {
+    max-width: 484px;
 }
 
 .second__button {
