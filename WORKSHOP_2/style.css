@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* меняем систему вычисления ширины, значение width будет включать в себя и paddings, и border */
+    box-sizing: border-box;
+    /* при получении фокуса input не будет иметь черную рамку */
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    /* 1146px - ширина сетки */
+    /* padding-left: calc(50% - 1146/2); */
+    padding-left: calc(50% - 573px);
+    padding-right: calc(50% - 573px);
+}
+
+body {
+    background-color: #020A18;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 1146px;
+    margin: 0 auto;
+}
+
+.top {
+    padding-bottom: 99px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 40px 32px 40px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.top__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 128px;
+    margin-top: 160px;
+    margin-bottom: 197px;
+}
+
+.top__info {
+    max-width: 604px;
+}
+
+.subtitle {
+    color: #3A68B8;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 28.8px */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.title {
+    color: #FFF;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 71.5px */
+    margin-bottom: 40px;
+}
+
+.text {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 28.8px */
+    opacity: 0.7;
+    margin-bottom: 50px;
+}
+
+.top__buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    display: flex;
+    gap: 10px;
+    padding: 15px 30px;
+    background: #3A68B8;
+    border-radius: 5px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* эффект наведения называется инверсией - меняется цвет фона и цвет текста */
+.button:hover {
+    color: #3A68B8;
+    background-color: #FFF;
+}
+
+
+.top__logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 71px;
+}
+
+.grid__block {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 362px);
+    justify-content: center;
+    padding-top: 264px;
+    padding-bottom: 257px;
+}
+
+.item__big {
+    grid-column: span 2;
+    grid-row: span 2;
+    gap: 60px;
+} 
+
+.item {
+    border-radius: 10px;
+    background: #132035;
+    padding: 30px;
+
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+}
+
+.heading {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 31.25px */
+}
+
+.item__text {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.second {
+    padding-top: 157px;
+}
+
+.second__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 68px;
+}
+
+.second__title {
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 52px */
+    margin-bottom: 30px;
+}
+
+.second__info {
+    max-width: 484px;
+}
+
+.second__button {
+    font-size: 16px;
+}
+
+.third {
+    padding-bottom: 221px;
+}
+
+.third__title {
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 52px */
+    margin-bottom: 40px;
+}
+
+.third__text {
+    margin-bottom: 20px;
+}
+
+.third__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.third__info {
+    max-width: 548px;
+}
+
+.footer {
+    padding: 48px 0 46px 0;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 362px);
+    justify-content: center;
+}
+
+svg {
+    margin-right: 10px;
+}
+
+.foot__title {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 33px;
+}
+
+.foot__text {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.foot__slogan {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 100;
+    line-height: normal;
+    width: 261px;
+}
+
+.foot__block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.svg__row svg {
+    margin-right: 24px;
+}
+
+/* Стили для планшета */
+@media (max-width: 1024px) {
+/* 768px - ширина контентной части, по 8px с каждой стороны закладываем отступы: (768 - 16) div 3 = 376px */
+    .center {
+        padding-left: calc(50% - 376px);
+        padding-right: calc(50% - 376px);
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .top {
+        padding-bottom: 120px;
+    }
+
+    .top__logos {
+        gap: 32px;
+        /* это значение выбрали подбором, чтобы логотипы правильно перестроились */
+        /* Другие решения: */
+        /* 1. переделать на grid */
+        /* 2. сделать две группы по два логотипа (верхняя и нижняя) на flex */
+        max-width: 650px;
+        /* для общего центрирования */
+        margin: auto;
+    }
+
+    .grid__block {
+        grid-template-columns: repeat(1, 362px);
+        gap: 32px;
+        padding-top: 264px;
+        padding-bottom: 243px;
+        justify-items: center;
+    }
+
+    /* в данном случае нельзя фиксировать высоту .item, т.к. может не поместиться длинный текст у .item__big */
+    
+    .item__big {
+        grid-column: span 1;
+        grid-row: span 1;
+        gap: 30px;
+    }
+
+    .item__big img {
+        width: 98px;
+    }
+
+    .third__content {
+        gap: 64px;
+    }
+
+    .footer {
+        /* значение 320px, как было рекомендовано на семинаре, выбыирали подбором, чтобы сохранить визуальный отступ на 768px */
+        grid-template-columns: repeat(2, 320px);
+        padding: 48px 40px;
+    }
+}
