@@ -47,11 +47,17 @@ body {
 
 .top__content {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 128px;
     margin-top: 160px;
     margin-bottom: 197px;
+}
+
+.top__info {
+    max-width: 604px;
 }
 
 .subtitle {
@@ -108,11 +114,6 @@ body {
     background-color: #FFF;
 }
 
-.top__content {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 197px;
-}
 
 .top__logos {
     display: flex;
@@ -262,4 +263,36 @@ font-family: 'Roboto', sans-serif;
 
 .svg__row svg {
     margin-right: 24px;
+}
+
+/* Стили для планшета */
+@media (max-width: 1024px) {
+/* 768px - ширина контентной части, по 8px с каждой стороны закладываем отступы: (768 - 16) div 3 = 376px */
+    .center {
+        padding-left: calc(50% - 376px);
+        padding-right: calc(50% - 376px);
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .top {
+        padding-bottom: 120px;
+    }
+
+    .top__logos {
+        gap: 32px;
+        /* это значение выбрали подбором, чтобы логотипы правильно перестроились */
+        /* Другие решения: */
+        /* 1. переделать на grid */
+        /* 2. сделать две группы по два логотипа (верхняя и нижняя) на flex */
+        max-width: 650px;
+        /* для общего центрирования */
+        margin: auto;
+    }
 }
