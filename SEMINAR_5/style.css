@@ -216,8 +216,14 @@ body {
 
 .third__content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 25px;
+}
+
+.third__info {
+    max-width: 548px;
 }
 
 .footer {
@@ -306,6 +312,7 @@ font-family: 'Roboto', sans-serif;
         grid-template-columns: repeat(1, 362px);
         gap: 32px;
         padding-top: 264px;
+        padding-bottom: 243px;
         justify-items: center;
     }
 
@@ -319,5 +326,9 @@ font-family: 'Roboto', sans-serif;
 
     .item__big img {
         width: 98px;
+    }
+
+    .third__content {
+        gap: 64px;
     }
 }
