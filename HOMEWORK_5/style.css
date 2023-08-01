@@ -12,3 +12,29 @@ a {
 body {
     font-family: 'Lato', sans-serif;;
 }
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+.header {
+    min-height: 75px;
+    background: #222222;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
