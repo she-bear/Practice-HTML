@@ -39,6 +39,10 @@ body {
     gap: 33px;
 }
 
+.header__rightMobile {
+    display: none;
+}
+
 .top {
     background: #F1E4E6;
     display: flex;
@@ -203,5 +207,27 @@ body {
 .button__browse:hover {
     color: #FFF;
     background-color: #F26376;
+}
+
+/* Стили для мобильной версии */
+@media(max-width: 376px) {
+    /* По 8px с каждой стороны закладываем отступы: (375 - 16) div 2 = 180px */
+    .center {
+        padding-left: calc(50% - 180px);
+        padding-right: calc(50% - 180px);
+    }
+
+    .header {
+        padding: 0 16px;
+    }
+
+    .header__right {
+        display: none;
+    }
+
+    .header__rightMobile {
+        display: flex;
+        align-items: center;
+    }
 }
 
