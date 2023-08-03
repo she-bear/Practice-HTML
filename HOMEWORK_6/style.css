@@ -210,11 +210,11 @@ body {
 }
 
 /* Стили для мобильной версии */
-@media(max-width: 376px) {
-    /* По 8px с каждой стороны закладываем отступы: (375 - 16) div 2 = 180px */
+@media (min-width: 320px)
+ and (max-width: 767px){
     .center {
-        padding-left: calc(50% - 180px);
-        padding-right: calc(50% - 180px);
+        padding-left: calc(50% - 179px);
+        padding-right: calc(50% - 179px);
     }
 
     .header {
@@ -228,6 +228,22 @@ body {
     .header__rightMobile {
         display: flex;
         align-items: center;
+    }
+
+    .top {
+        padding: 148px 56px;
+    }
+
+    .top__image {
+        display: none;
+    }
+
+    .upper__text {
+        font-size: 38px;
+    }
+
+    .bottom__text {
+        font-size: 20px;
     }
 }
 
