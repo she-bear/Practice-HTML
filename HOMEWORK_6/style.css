@@ -271,5 +271,17 @@ body {
         display: block;
         width: 100%;
     }
+
+    .featured__content {
+        display: flex;
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: 16px;
+        padding: 64px 8px 40px 8px;
+    }
+
+    .feature__item, .featured__img {
+        width: 100%;
+    }
 }
 
