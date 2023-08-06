@@ -361,4 +361,14 @@ body {
         max-width: 100%;
     }
 
+    .featured__content {
+        margin-top: 74px;
+        margin-bottom: 32px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .browse {
+        margin-bottom: 64px;
+    }
 }
