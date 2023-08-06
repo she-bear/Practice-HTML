@@ -322,10 +322,14 @@ body {
 
 /* Стили для планшета */
 @media (min-width: 768px) and (max-width: 1024px) {
-    /* 770px - ширина макета, по 16px с каждой стороны закладываем отступы: (770 - 32) div 2 = 376px */
+    /* 768px - ширина макета, по 16px с каждой стороны закладываем отступы: (768 - 32) div 2 = 368px */
     .center {
-        padding-left: calc(50% - 385px);
-        padding-right: calc(50% - 385px);
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
+
+    .header__left {
+        padding-left: 16px;
     }
 
     .header__right {
@@ -342,6 +346,19 @@ body {
 
     .bottom__text {
         font-size: 24px;
+    }
+
+    .specity {
+        gap: 20px;
+        padding-bottom: 110px;
+    }
+
+    .specity__img__mob {
+        max-width: 100%;
+    }
+
+    .specity__img {
+        max-width: 100%;
     }
 
 }
