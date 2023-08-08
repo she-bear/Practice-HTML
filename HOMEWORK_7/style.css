@@ -363,6 +363,36 @@ body {
     line-height: normal;
 }
 
+.footer {
+    background-color: #222224;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright__text {
+    color: #FBFBFB;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.social {
+    display: flex;
+    gap: 8px;
+}
+
+.social__icon {
+    background-color: #FFF;
+    width: 31px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* Стили для мобильной версии */
 @media (min-width: 320px) and (max-width: 767px) {
@@ -457,6 +487,15 @@ body {
 
     .subscribe__subtitle {
         font-size: 14px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 48px;
+        align-items: center;
+        padding-top: 43px;
+        padding-bottom: 9px;
     }
 }
 
