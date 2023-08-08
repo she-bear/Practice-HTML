@@ -43,6 +43,14 @@ body {
     display: none;
 }
 
+path { 
+    transition: fill .3s ease; 
+}
+
+.header__icon:hover path {
+    fill: #F16D7F;
+}
+
 .top {
     background: #F1E4E6;
     display: flex;
@@ -87,6 +95,11 @@ body {
 
 .specity__item {
     position: relative;
+    transition: transform 1.5s;
+}
+
+.specity__item:hover {
+    transform: scale(1.1);
 }
 
 .specify__content {
@@ -158,6 +171,10 @@ body {
 .feature__item {
     background: #F8F8F8;
     position: relative;
+}
+
+.featured__img {
+    transition: all 0.4s;
 }
 
 .feature__item:hover .featured__img {
@@ -241,6 +258,7 @@ body {
     font-weight: 400;
     line-height: normal;
     background-color: #FFF;
+    transition: all 0.3s;
 }
 
 .button__browse:hover {
@@ -265,6 +283,10 @@ body {
 
 .info__link {
     padding-bottom: 25px;
+}
+
+.info__link:hover {
+    cursor: default;
 }
 
 .info__subtitle {
@@ -349,6 +371,10 @@ body {
     padding-right: 22px;
 }
 
+.subscribe__input:focus {
+    background-color: #FFFFFF;
+}
+
 .subscribe__button {
     width: 100px;
     height: 49px;
@@ -361,6 +387,11 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    transition: transform 0.3s;
+}
+
+.subscribe__button:hover {
+    transform: scale(1.05)
 }
 
 .footer {
@@ -391,6 +422,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s;
+}
+
+.social__icon:hover {
+    background-color: #F16D7F;
+}
+
+.social__icon:hover path {
+    fill: #FFF;
 }
 
 
